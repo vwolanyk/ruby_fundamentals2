@@ -57,3 +57,12 @@ puts ""
 grocery_list = ["beets", "kale", "steak", "miso"]
 
 grocery_list.each {|item| puts "* #{item}"}
+
+grocery_list << "rice"
+
+grocery_list.each {|item| puts "* #{item}"}
+
+# Method to Output Grocery list in specified format
+def output_grocery_list
+  grocery_list.each {|item| puts "* #{item}"}
+end
