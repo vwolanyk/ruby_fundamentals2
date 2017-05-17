@@ -54,7 +54,7 @@ expenses_sum(expensive_array)
 puts "***EXERCISE 9 ***"
 puts ""
 
-grocery_list = ["beets", "kale", "steak", "miso"]
+grocery_list = [ "kale", "beets", "steak", "miso"]
 
 grocery_list.each {|item| puts "* #{item}"}
 
@@ -63,8 +63,8 @@ grocery_list << "rice"
 grocery_list.each {|item| puts "* #{item}"}
 
 # 1. Method to Output Grocery list in specified format
-def output_grocery_list
-  grocery_list.each {|item| puts "* #{item}"}
+def output_grocery_list(current_list)
+  current_list.each {|item| puts "* #{item}"}
 end
 
 # 2
@@ -78,5 +78,15 @@ end
  end
 
  # 4
- puts grocery_list[1]
- 
+ puts "The second item on your list is: #{grocery_list[1]}"
+
+ # 5
+
+
+ output_grocery_list(grocery_list.sort)
+
+# 6
+grocery_list << "salmon"
+output_grocery_list(grocery_list)
+grocery_list.delete("salmon")
+output_grocery_list(grocery_list)
