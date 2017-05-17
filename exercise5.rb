@@ -14,3 +14,19 @@ def convert_farenheit_to_celsius(temp)
 end
 
 convert_farenheit_to_celsius(fahr)
+
+# EXERCISE 7
+
+puts "***EXERCISE SEVEN***"
+puts""
+puts ""
+
+def wrap_text(text,symbols)
+
+   return "#{symbols}#{text}#{symbols}"
+
+end
+
+one = wrap_text("new message", "###" )
+two = wrap_text(one,"===")
+puts wrap_text(two,"---")
