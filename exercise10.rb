@@ -16,3 +16,12 @@ def name_number_students(cohort_hash)
 end
 
 name_number_students(students)
+
+# 3
+
+students[:cohort4] = 43
+puts students
+
+# 4
+
+puts students.keys
