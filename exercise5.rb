@@ -76,3 +76,7 @@ end
    puts "You need to pick up bananas"
  else puts "You don't need any bananas"
  end
+
+ # 4
+ puts grocery_list[1]
+ 
