@@ -53,3 +53,7 @@ expenses_sum(expensive_array)
 
 puts "***EXERCISE 9 ***"
 puts ""
+
+grocery_list = ["beets", "kale", "steak", "miso"]
+
+grocery_list.each {|item| puts "* #{item}"}
