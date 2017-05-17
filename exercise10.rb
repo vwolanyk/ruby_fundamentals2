@@ -36,6 +36,7 @@ puts students
 
 # UNIVERSAL ANSWER to get 2nd Indexed Item
 
+puts "DELETE 2nd COHORT"
 student_array = students.to_a
 student_array.delete_at(1)
 students = student_array.to_h
@@ -46,8 +47,18 @@ puts students
  # students.delete(:cohort2)
 
 # 7
+puts "TOTAL students"
 
 total_students = 0
 
 students.each {|cohor,num| total_students += num}
 puts total_students
+
+# 8
+
+puts "10.8 - Staff Hash"
+puts ''
+
+staff = {cohort1: 12, cohort2:4 , cohort3:33, cohort4:17}
+
+name_number_students(staff)
