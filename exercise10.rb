@@ -25,3 +25,9 @@ puts students
 # 4
 
 puts students.keys
+
+# 5
+puts students
+puts "5% INCREASE"
+students.map {|name,num| students[name] = (num * 1.05).round}
+puts students
