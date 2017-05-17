@@ -62,7 +62,17 @@ grocery_list << "rice"
 
 grocery_list.each {|item| puts "* #{item}"}
 
-# Method to Output Grocery list in specified format
+# 1. Method to Output Grocery list in specified format
 def output_grocery_list
   grocery_list.each {|item| puts "* #{item}"}
 end
+
+# 2
+
+ puts "There are #{grocery_list.count} items on your list!"
+
+ # 3
+ if grocery_list.include?("bananas")
+   puts "You need to pick up bananas"
+ else puts "You don't need any bananas"
+ end
